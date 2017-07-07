@@ -1,0 +1,134 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class DFS
+
+{
+
+	private Stack<Integer> stack;
+
+	public DFS()
+
+	{
+
+		stack = new Stack<Integer>();
+
+	}
+
+	public void dfs(int adjacency_matrix[][], int source)
+
+	{
+
+		int nodes = adjacency_matrix[source].length - 1;
+
+		int visited[] = new int[nodes + 1];
+
+		int element = source;
+
+		int i = source;
+
+		System.out.print(element + "\t");
+
+		visited[source] = 1;
+
+		stack.push(source);
+
+		while (!stack.isEmpty())
+
+		{
+
+			element = stack.peek();
+
+			i = element;
+
+			while (i <= nodes)
+
+			{
+
+				if (adjacency_matrix[element][i] == 1 && visited[i] == 0)
+
+				{
+
+					stack.push(i);
+
+					visited[i] = 1;
+
+					element = i;
+
+					i = 1;
+
+					System.out.print(element + "\t");
+
+					continue;
+
+				}
+
+				i++;
+
+			}
+
+			stack.pop();
+
+		}
+
+	}
+
+	public static void main(String... arg) throws FileNotFoundException
+
+	{
+
+		int  source;
+
+		Scanner scanner = null;
+
+		try
+
+		{
+
+			scanner = new Scanner(System.in);
+
+			int adjacency_matrix[][] = new int[0][0];
+
+			File f = new File("input.txt");
+			Scanner k = new Scanner(f);
+
+			while (k.hasNext()) {
+				int n = k.nextInt();
+				int m = k.nextInt();
+
+				adjacency_matrix = new int[m + 1][n + 1];
+				while (k.hasNext()) {
+					n = k.nextInt();
+					m = k.nextInt();
+					adjacency_matrix[n][m] = 1;
+					adjacency_matrix[m][n] = 1;
+				}
+
+			}
+
+			System.out.println("Enter the source for the graph");
+
+			source = scanner.nextInt();
+
+			System.out.println("The DFS Traversal for the graph is given by ");
+
+			DFS dfs = new DFS();
+
+			dfs.dfs(adjacency_matrix, source);
+
+		} catch (InputMismatchException inputMismatch)
+
+		{
+
+			System.out.println("Wrong Input format");
+
+		}
+
+		scanner.close();
+
+	}
+
+}
