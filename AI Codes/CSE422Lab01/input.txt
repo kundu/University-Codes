@@ -1,0 +1,28 @@
+20 24 
+Arad
+Bucharest
+
+Oradea,Zerind
+Oradea,Slblu
+Zerind,Arad
+Arad,Timisoara
+Arad,Slblu
+Timisoara,Lugoj
+Lugoj,Mehalda
+Mehalda,Dobreta
+Dobreta,Carlova
+Carlova,Rimnicu Vllcea
+Carlova,Pltesti
+Carlova,Bucharest
+Glurglu,Bucharest
+Bucharest,Pltesti
+Bucharest,Urziceni
+Bucharest,Fagaras
+Eforle,Hlrsova
+Urziceni,Vaslul
+Urziceni,Hlrsova
+Vaslul,Issl
+Fagaras,Slblu
+Issl,Neamt
+Pltesti,Rimnicu Vllcea
+Rimnicu Vllcea,Slblu
