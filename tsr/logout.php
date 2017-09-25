@@ -1,0 +1,10 @@
+<?php
+    session_start();
+    if(empty($_SESSION["name"])){
+       header("Location:index.php");
+    }
+    else{
+        session_destroy();
+        header("Location:index.php");
+    }
+?>

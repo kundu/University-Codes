@@ -1,0 +1,174 @@
+.header-panel {
+    background-color: rgba(0, 0, 0, 0.36);
+    /* border: 0px solid #c72626; */
+    margin-top: 12px;
+    box-shadow: 0px 0px 8px #2e4e24;
+    margin-bottom: 25px;
+}
+
+.welcome-note {
+    
+}
+
+.welcome-note p{
+    font-size: 1.5em;
+    color: #000000;
+    font-family: serif;    
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h2{
+    
+}
+
+.admin-link {
+    margin-top: 10px;
+}
+
+.admin-link a{
+    color: #f70808;
+    font-family: cursive;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.admin-link a:hover{
+    color: #fcf5f5;
+    font-family: cursive;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.admin-link a:visited{
+    
+}
+
+.all-classes-name {
+    display: flow-root;
+    margin-bottom: 10px;   
+}
+
+.classes {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.classes button{
+    width: 80%;
+    height: 60px;
+    background-color: rgba(253, 0, 0, 0.89);
+    color: #fff;
+    font-size: 2.2em;
+    font-family: fantasy;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.classes button:hover{
+    width: 80%;
+    height: 60px;
+    background-color: rgb(253, 0, 0);
+    color: #222;
+    font-size: 2.2em;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+
+
+.class-header {
+    text-align: center;
+}
+
+.class-header h1{
+    font-family: serif;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.file-upload-from {
+    
+}
+
+.file-upload-from form{
+        width: 60%;
+    margin: 0 auto;
+}
+
+.file-upload-from form input{
+        display: block;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.file-upload-from form label{
+        font-weight: 800;
+}
+
+.download {
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flow-root;
+    box-shadow: 0px 0px 5px #fff;
+    margin-bottom: 10px
+}
+
+.download:hover {
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flow-root;
+    box-shadow: 0px 0px 5px #772424;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 70%;
+    float: left;
+}
+
+.info h4{
+    word-wrap: break-word;
+    margin-bottom: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info p{
+    word-wrap: break-word;
+    font-size: 15px;
+    font-family: serif;
+    color: #1d1b1b;
+}
+
+.download-link a{
+    
+}
+
+.download-icon {
+    width: 85px;
+    height: 100%;
+    float: right;
+}
+
+.download-link {
+    width: 30%;
+    float: left;
+}
+
+.download-link button{
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.closeMain {
+    
+}
