@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Max Min & More</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    </head>
+    
+    <script type="text/javascript">
+        
+        
+       function keyPress(){
+           
+           document.getElementById("showDiv").style.display = "block";
+           
+           var numbers=document.getElementById("numbers");
+           
+           var arrayOfNumbers = numbers.value.split(",");
+           
+            for (var i=0; i<arrayOfNumbers.length; i++){
+                arrayOfNumbers[i] = parseInt(arrayOfNumbers[i]); 
+           }
+           
+            Array.prototype.max = function() 
+            {
+            return Math.max.apply(null, this);
+            }
+
+            Array.prototype.min = function() 
+            {
+            return Math.min.apply(null, this);
+            }
+
+            var sum = 0;
+            for (var i=0; i<arrayOfNumbers.length; i++)
+            {
+                sum = sum+ arrayOfNumbers[i];
+            }
+           
+            var average = sum/arrayOfNumbers.length;
+           
+           var reverse = "";
+
+            for (var i=arrayOfNumbers.length-1; i>=0; i--)
+            {
+                reverse = reverse + arrayOfNumbers[i] + ",";
+            }
+           
+           document.getElementById("maxH").innerHTML="Max: "+arrayOfNumbers.max();
+           document.getElementById("minH").innerHTML="Min: "+arrayOfNumbers.min();
+           document.getElementById("sumH").innerHTML="Sum: "+sum;
+           document.getElementById("avgH").innerHTML="Average: "+average;
+           document.getElementById("reverseOrderH").innerHTML="Reverse: "+reverse;
+           
+           
+           
+       }
+    </script>
+    
+    <body style='background: url("image/b1.jpg") no-repeat center center fixed;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover;'>
+        
+        <div class="wrapper">
+            <div class="header-panel">
+                <h1>391 Assignment 2</h1>
+                <hr class="underline"></hr>
+                <h3>Javascript Functions</h3>
+            </div>
+        
+            <div class="menu-bars">
+                <a href="index.html">Quote Box</a>
+                <a href="hero_conveter.html">Hero Converter</a>
+                <a href="min_max_more.html">Min,Max and More</a>
+                <a href="magic.html">Magic</a>
+            </div>
+        
+            <div class="hero-conveter max-min" id="hero-conveter">
+                <h1>Max Min and More</h1>
+                <hr></hr>
+                <input type="text" id="numbers" placeholder="enter the numbers..." onkeyup="keyPress()"> 
+                
+                <div id="showDiv">
+                    <div id="max">
+                        <h4 id="maxH"></h3>
+                    </div>
+
+                    <div id="min">
+                        <h4 id="minH"></h3>
+                    </div>
+
+                    <div id="sum">
+                        <h4 id="sumH"></h3>
+                    </div>
+
+                    <div id="avg">
+                        <h4 id="avgH"></h3>
+                    </div>
+
+                    <div id="reverseOrder">
+                        <h4 id="reverseOrderH"></h3>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    
+                </script>
+            </div> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head> 
+        <title>Hero Converter</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    </head>
+    
+    <script type="text/javascript">
+        function convertClick(){
+            var number=document.getElementById("number").value;
+            if(isNaN(number)){
+                alert("You must enter a number");
+                document.getElementById("number").value="";
+            }
+            else{
+                var whatToDo=document.getElementById("conRule").value;
+                if(whatToDo == "kg"){
+                    var ans=number*.4536+" Kilograms";
+                    document.getElementById("theAns").innerHTML=ans;
+                }
+                else{
+                    var ans=number*2.2046;
+                    document.getElementById("theAns").innerHTML=ans+" Pounds";
+                }
+            }
+        }
+    </script>
+    
+    <body style='background: url("image/b1.jpg") no-repeat center center fixed;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover;'>
+        
+        <div class="wrapper">
+            <div class="header-panel">
+                <h1>391 Assignment 2</h1>
+                <hr class="underline"></hr>
+                <h3>Javascript Functions</h3>
+            </div>
+        
+            <div class="menu-bars">
+                <a href="index.html">Quote Box</a>
+                <a href="hero_conveter.html">Hero Converter</a>
+                <a href="min_max_more.html">Min,Max and More</a>
+                <a href="magic.html">Magic</a>
+            </div>
+        
+            <div class="hero-conveter" id="hero-conveter">
+                <h1>Hero Conveter</h1>
+                <hr></hr>
+                <input type="text" id="number" placeholder="enter the number...">
+                
+                 <select id="conRule">
+                  <option value="pound">KG to Pound</option>
+                  <option value="kg">Pound to KG</option>
+                </select> 
+                <button value="Go" onclick="convertClick()">Go</button> 
+                <span id="theAns"></span>
+                <script type="text/javascript">
+                    
+                </script>
+            </div> 
+        </div>
+    </body>
+</html>

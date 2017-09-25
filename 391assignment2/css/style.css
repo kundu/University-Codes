@@ -1,0 +1,284 @@
+
+body {
+     
+}
+
+.myQuote {
+    margin-top: 3%;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 3%;
+    width: 70%;
+    color: white;
+    margin-left: 12%;
+    margin-right: 12%;
+    border: 7px double #fffcf8;
+    background-color: rgba(95, 81, 81, 0.26);
+}
+
+
+
+.wrapper {
+    widows: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.header-panel h1 , h3{
+    
+}
+
+.header-panel {
+    background-color: rgba(95, 81, 81, 0.21);
+    color: #fff;
+    border: 2px dotted #fff;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 1.29em;
+    font-family: cursive;
+}
+
+.buttons {
+        text-align: center;
+    margin-top: 5%;
+}
+
+.buttons button{
+    width: 8%;
+    height: 12%;
+    padding: 0;
+    border: 5px solid rgba(0, 0, 0, 0.82);
+    cursor: pointer;
+    margin: 1%;
+}
+
+
+.red {
+    background-color: rgba(249, 2, 2, 0.75);
+}
+
+.red:hover {
+    background-color: rgb(249, 2, 2);
+    border: 5px solid black;
+}
+
+.green {
+    background-color: rgba(102, 189, 1, 0.75);
+}
+
+.green:hover {
+	background-color: rgb(102, 189, 1);
+    border: 5px solid black;
+}
+
+.blue {
+    background-color: rgba(4, 29, 193, 0.75);
+}
+
+.blue:hover {
+	background-color: rgb(4, 29, 193);
+    border: 5px solid black;
+}
+
+.yellow {
+    background-color: rgba(234, 150, 3, 0.75);
+}
+
+.yellow:hover {
+	background-color: rgb(234, 150, 3);
+    border: 5px solid black;
+}
+
+.underline {
+    width: 47%; 
+    margin-top: 0;
+    margin-bottom: 0;
+    border-color: #e20099;
+}
+
+.pickYourColor {
+    text-align: center;
+    border: 2px solid #fff;
+    background-color: rgba(97, 125, 116, 0.29);
+    border-style: dashed;
+    color: rgb(0, 255, 222);
+}
+
+.menu-bars {
+    text-align: center;
+}
+
+.menu-bars a{
+    margin: 1%;
+    font-size: 1.29em;
+    font-family: cursive;
+    border: 2px solid #fff;
+    background-color: rgba(136, 142, 116, 0.24);
+    color: #f7b10d;
+    text-decoration: none;
+}
+
+.menu-bars a:hover{
+    border: 2px dotted #26cea5;
+    background-color: rgba(115, 119, 100, 0.55);
+}
+
+.menu-bars a:visited{
+    padding: 1%;
+    font-size: 1.29em;
+    font-family: cursive;
+    border: 2px solid #fff;
+    background-color: rgba(136, 142, 116, 0.24);
+    color: #f7b10d;
+}
+
+.hero-conveter {
+    margin-top: 2%;
+    text-align: center;
+    background-color: rgba(57, 73, 88, 0.22);
+    padding: 2%;
+    width: 70%;
+    margin-left: 13%;
+    margin-right: 13%;
+    border: 3px double #fff;
+    margin-bottom: 3%;
+}
+
+.hero-conveter h1{
+    color: #fff;
+    font-family: cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-conveter hr{
+    width: 50%;
+    margin-bottom: 4%;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+}
+
+.hero-conveter input {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+}
+
+.hero-conveter select{
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff; 
+}
+
+.hero-conveter button{
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: 2px dotted #fff;
+    cursor: pointer;
+} 
+
+.hero-conveter button:hover{
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: 2px solid #fff;
+} 
+
+#theAns {
+    display: block;
+    margin-top: 2%;
+    font-size: 2.5em;
+    font-weight: 900;
+    font-family: monospace;
+    color: #f9a300;
+}
+
+.max-min h4{ 
+    border: 2px groove #fff; 
+    font-size: 1.9em;
+    color: #f7a306;
+    font-family: monospace;
+}
+
+.max-min h4:hover{ 
+    border: 2px dashed #aaefe6;
+}
+
+#showDiv {
+    display: none;
+}
+
+.magic {
+    margin-top: 2%; 
+    background-color: rgba(57, 73, 88, 0.22); 
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 3px double #fff;
+    margin-bottom: 3%;
+}
+
+.magic h1{
+    text-align: center;
+	color: #fff;
+    font-family: cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.magic hr{ 
+    width: 50%;
+    margin-bottom: 4%;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+}
+
+.myTextbox {
+    
+}
+
+#textArea {
+    color: #fff;
+    font-size: 1.5em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(102, 96, 140, 0.32);
+    border: 2px solid #273fdc;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 16.4em;
+}
+
+.masicButtons {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.masicButtons button{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: 2px dotted #fff;
+    cursor: pointer;
+    margin-top: 2%;
+    
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.masicButtons button:hover{
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: 2px solid #fff;
+    
+    
+     -webkit-transform:scale(1); /* Safari and Chrome */
+    -moz-transform:scale(1); /* Firefox */
+    -ms-transform:scale(1); /* IE 9 */
+    -o-transform:scale(1); /* Opera */
+     transform:scale(1);
+}

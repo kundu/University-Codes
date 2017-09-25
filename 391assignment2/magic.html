@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>Magic</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    </head>
+    
+    <script type="text/javascript">
+        function clearClick(){
+           document.getElementById("textArea").value="";
+        }
+        
+        function upperClick(){
+            document.getElementById("upperLower").onclick=lowerClick;
+            document.getElementById("upperLower").innerHTML="Lower";
+            
+            var text=document.getElementById("textArea").value;
+            text=text.toUpperCase();
+            document.getElementById("textArea").value=text;
+        }
+        
+        function lowerClick(){
+            document.getElementById("upperLower").onclick=upperClick;
+            document.getElementById("upperLower").innerHTML="Capitalize";
+            
+            var text=document.getElementById("textArea").value;
+            text=text.toLowerCase();
+            document.getElementById("textArea").value=text;
+        }
+        
+        function sortClick(){
+            var text=document.getElementById("textArea").value;
+            var arrayOfStrings = text.split("\n");  
+            arrayOfStrings=arrayOfStrings.sort();
+            var save="";
+            for (var i=0; i<arrayOfStrings.length; i++){
+                if(i<arrayOfStrings.length-1){
+                    save =save+arrayOfStrings[i] +"\n";
+                }
+                else{
+                    save =save+arrayOfStrings[i]; 
+                }
+            } 
+            document.getElementById("textArea").value=save; 
+        }
+        
+        function reverseClick(){
+            var text=document.getElementById("textArea").value;
+            var arrayOfStrings = text.split("\n");  
+            var save="";
+            for (var i=arrayOfStrings.length-1; i>=0; i--){
+                if(i>0){
+                    save =save+arrayOfStrings[i] +"\n";
+                }
+                else{
+                    save =save+arrayOfStrings[i]; 
+                }
+            } 
+            document.getElementById("textArea").value=save; 
+        }
+        
+        function stripBlankClick(){
+            var text=document.getElementById("textArea").value;
+            var arrayOfStrings = text.split("\n");  
+            var save="";
+            
+            for (var i=0; i<arrayOfStrings.length; i++){
+                arrayOfStrings[i]=arrayOfStrings[i].trim();
+            } 
+            
+            for (var i=0; i<arrayOfStrings.length; i++){
+                if(i<arrayOfStrings.length-1){
+                    save =save+arrayOfStrings[i] +"\n";
+                }
+                else{
+                    save =save+arrayOfStrings[i];
+                }
+            } 
+            save=save.replace(/(^[ \t]*\n)/gm, "");
+            document.getElementById("textArea").value=save;
+        }
+        
+        function addnumbersClick(){
+            stripBlankClick();
+            
+            var text=document.getElementById("textArea").value;
+            if(text!=""){
+                var arrayOfStrings = text.split("\n");  
+                var save="";
+
+                for (var i=0; i<arrayOfStrings.length; i++){
+                    arrayOfStrings[i]=arrayOfStrings[i].trim();
+                }  
+
+
+                for (var i=0; i<arrayOfStrings.length; i++){
+                    if(i<arrayOfStrings.length-1){ 
+                        save =save+ (i+1)+": "+arrayOfStrings[i] +"\n";
+                    }
+                    else{
+                        save =save+ (i+1)+": "+arrayOfStrings[i]; 
+                    }
+                } 
+
+                save=save.replace(/(^[ \t]*\n)/gm, "");
+                document.getElementById("textArea").value=save;
+            }
+        }
+        
+        function shuffleClick(){
+            stripBlankClick();
+            addnumbersClick();
+            
+            var text=document.getElementById("textArea").value;
+            var arrayOfStrings = text.split("\n"); 
+            var randomNumber=Math.floor((Math.random() * arrayOfStrings.length) + 0);  
+            var save="";
+            var temp="";
+            var tempNumber=0;
+            for (var i=arrayOfStrings.length-1; i>=0; i--){
+                tempNumber=Math.floor(Math.random() * (i + 1));
+                temp = arrayOfStrings[i];
+                arrayOfStrings[i] = arrayOfStrings[tempNumber];
+                arrayOfStrings[tempNumber] = temp;
+            }
+            
+            for (var i=0; i<arrayOfStrings.length; i++){
+                if(i<arrayOfStrings.length-1){ 
+                    save =save+arrayOfStrings[i] +"\n";
+                }
+                else{
+                    save =save+arrayOfStrings[i]; 
+                }
+            } 
+            
+            
+            
+            document.getElementById("textArea").value=save;
+        }
+        
+    </script>
+    
+    <body style='background: url("image/b1.jpg") no-repeat center center fixed;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover;'>
+        
+        <div class="wrapper">
+            <div class="header-panel">
+                <h1>391 Assignment 2</h1>
+                <hr class="underline"></hr>
+                <h3>Javascript Functions</h3>
+            </div>
+        
+            <div class="menu-bars">
+                <a href="index.html">Quote Box</a>
+                <a href="hero_conveter.html">Hero Converter</a>
+                <a href="min_max_more.html">Min,Max and More</a>
+                <a href="magic.html">Magic</a>
+            </div>
+        
+            <div class="magic" id="magic">
+                
+                <h1>Magic !!!</h1>
+                <hr></hr>
+        
+                <div class="myTextbox">
+                    <textarea id="textArea"></textarea>
+                </div>
+                
+                <div class="masicButtons">
+                    <button class="clear" name="clear" onclick="clearClick()">Clear</button>
+                    <button id="upperLower" class="upperLower" name="ul" onclick="upperClick()">Capitalize</button>
+                    <button class="sort" name="sort" onclick="sortClick()">Sort</button>
+                    <button class="reverse" name="reverse" onclick="reverseClick()">Reverse</button>
+                    <button class="stripBlank" name="stripBlank" onclick="stripBlankClick()">Strip Blank</button>
+                    <button class="addNumbers" name="addmunbers" onclick="addnumbersClick()">Add Numbers</button>
+                    <button class="shuffle" name="shuffle" onclick="shuffleClick()">Shuffle</button>
+                    
+                </div> 
+            </div> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Home : Quote Box</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    </head>
+    
+    <script type="text/javascript">
+        function redFunction(){
+            document.getElementById("myQuote").style.backgroundColor = "rgb(249, 2, 2)";
+            document.getElementById("myQuote").style.fontFamily = "cursive";
+        }
+        
+        function greenFunction(){
+            document.getElementById("myQuote").style.backgroundColor = "rgb(102, 189, 1)";
+            document.getElementById("myQuote").style.fontFamily = "monospace";
+        }
+        
+        function blueFunction(){
+            document.getElementById("myQuote").style.backgroundColor = "rgb(4, 29, 193)";
+            document.getElementById("myQuote").style.fontFamily = "sans-serif";
+        }
+        
+        function yellowFunction(){
+            document.getElementById("myQuote").style.backgroundColor = "rgb(234, 150, 3)";
+            document.getElementById("myQuote").style.fontFamily = "serif";
+        }
+    </script>
+    
+    <body style='background: url("image/b1.jpg") no-repeat center center fixed;background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;-o-background-size: cover;'>
+        
+        <div class="wrapper">
+            <div class="header-panel">
+                <h1>391 Assignment 2</h1>
+                <hr class="underline"></hr>
+                <h3>Javascript Functions</h3>
+            </div>
+        
+            <div class="menu-bars">
+                <a href="index.html">Quote Box</a>
+                <a href="hero_conveter.html">Hero Converter</a>
+                <a href="min_max_more.html">Min,Max and More</a>
+                <a href="magic.html">Magic</a>
+            </div>
+        
+            <div class="myQuote" id="myQuote">
+                <script type="text/javascript">
+
+                    var quote=["I decry the current tendency to seek patents on algorithms. There are better ways to earn a living than to prevent other people from making use of one's contributions to computer science." , "When people think about computer science, they imagine people with pocket protectors and thick glasses who code all night." , "Computer Science is embarrassed by the computer." , "I never took a computer science course in college, because then it was a thing you just learned on your own." , "I've been programming computers since elementary school, where they taught us, and I stuck with computer science through high school and college." , "We're not a vocational school. If someone wants to get a high-paying job, I would hope that there are easier ways to do it than working through a formal computer science curriculum."];
+
+                    var quoteNumber=Math.floor((Math.random() * quote.length) + 0); 
+                    
+                    document.write(quote[quoteNumber]); 
+                </script>
+            </div>
+
+            <div class="buttons">
+                <button class="red" name="red" onclick="redFunction()"></button>
+                <button class="green" name="green" onclick="greenFunction()"></button>
+                <button class="blue" name="blue" onclick="blueFunction()"></button>
+                <button class="yellow" name="yellow" onclick="yellowFunction()"></button>
+            </div>
+            <div class="pickYourColor">
+                <h3>Select your favourite color</h3>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+@media (max-width: 817px) { 
+  .menu-bars a{
+    font-size: .7em;
+    }   
+    
+    .header-panel{
+        font-size: 1em;
+    }
+    
+    .header-panel h1, h3{
+        margin-top: 0;
+    }
+    
+    .buttons button{
+        height: 7%;
+        width: 15%;
+    }
+    
+    .hero-conveter , .magic {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 488px) { 
+  .menu-bars a{
+    display: inherit;
+    }   
+    
+    .buttons button{
+        height: 7%;
+        width: 15%;
+    }
+    
+    .myQuote{
+        padding: 0;
+        border: 6px double #fffcf8;
+        font-size: 1em;
+    }
+    
+    .header-panel {
+	   font-size: .8em;
+    }
+    
+    .hero-conveter , .magic{
+        border: 1px double #fff;
+    }
+    
+    .hero-conveter input{
+        font-size: 1em;
+    }
+    
+    .hero-conveter select{
+        margin-top: 5%;
+        font-size: 1.3em;
+    }
+    
+    .hero-conveter button{
+        font-size: 1.3em;
+    }
+    
+    #theAns{
+        font-size: 1.7em;
+    }
+    
+    .hero-conveter h1 , .magic h1{
+        font-size: 1.4em;
+    }
+    
+    
+    #avgH {
+        font-size: 1.2em;
+    }
+
+    #reverseOrderH {
+        font-size: 1.2em;
+    }
+    
+    
+    #sumH , #minH , #maxH{
+        font-size: 1.5em;
+    }
+    
+    #textArea {
+	   height: 13.4em;
+    }
+    
+    .masicButtons button {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3%;
+    }
+}
+
+
