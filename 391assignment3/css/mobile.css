@@ -1,0 +1,197 @@
+@media (max-width: 1080px) { 
+    .user-close-button {  
+     -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background-color: rgba(0, 2, 2, 0.76);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Georgia;
+    display: ;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 6px #3d768a;
+    margin-top: 0;
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 1%;
+    }
+} 
+
+
+@media (max-width: 840px) { 
+    .user-book-panel h1 {
+    margin-bottom: 2%;
+    margin-top: 0;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1em;
+    }
+    
+    
+    .user-book-panel {
+    display: none;
+    position: absolute;
+    top: 8%;
+    left: 29%;
+    background-color: rgba(6, 45, 38, 0.9);
+    border: 5px solid #0bc7ce;
+    width: 41%;
+    /* margin-left: -150px; */
+    /* margin-top: -240px; */
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    -moz-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    -webkit-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    z-index: 1;
+    }
+
+}
+
+
+
+@media (max-width: 600px){ 
+     .user-book-panel {
+    display: none;
+    position: absolute;
+    top: 8%;
+    left: 17.5%;
+    background-color: rgba(6, 45, 38, 0.9);
+    border: 5px solid #0bc7ce;
+    width: 242px;
+    /* margin-left: -150px; */
+    /* margin-top: -240px; */
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    -moz-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    -webkit-box-shadow: 12px 0 15px -4px #000000, -12px 0 15px -4px#000000;
+    z-index: 1;
+    }
+}
+
+
+@media (max-width: 735px){
+    .header-panel h1 {
+        margin-top: 0;
+        text-align: center;
+        color: rgb(255, 0, 0);
+        background: rgba(31, 31, 31, 0.82);
+        font-size: 3em;
+        letter-spacing: .2em;
+        font-family: cursive;
+        border: 2px solid #c4a412;
+    }
+    
+    .header-panel h1:hover{
+        text-align: center;
+        color: rgb(255, 0, 0);
+        background: rgba(31, 31, 31, 0.71);
+        font-size: 3em;
+        letter-spacing: .2em;
+        font-family: cursive;
+        border: 2px solid #ffd100;
+    }
+    
+    .mechanics {
+        background: rgba(37, 35, 35, 0.68);
+        width: 46%;
+        float: left;
+        border: 1px solid white;
+        margin-left: 2.5%;
+        margin-top: 2%;
+        height: 187px;
+    }
+    
+    
+    
+    .mechanics p{
+    text-align: center;
+    color: rgb(0, 253, 255);
+    font-size: 1.1em;
+    
+/*
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+*/
+}
+    
+    
+   .mechanics p:hover{
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    
+    transition: all 0.3s;
+    transform: scale(1);
+    }
+}
+
+
+@media (max-width: 460px){
+    .header-panel h1 {
+        margin-top: 0;
+        text-align: center;
+        color: rgb(255, 0, 0);
+        background: rgba(31, 31, 31, 0.82);
+        font-size: 2em;
+        letter-spacing: .2em;
+        font-family: cursive;
+        border: 2px solid #c4a412;
+    }
+    
+    .mechanics {
+        background: rgba(37, 35, 35, 0.68);
+        width: 97%;
+        float: left;
+        border: 1px solid white;
+        margin-left: 2.5%;
+        margin-top: 2%;
+        height: 187px;
+    }
+    
+    .header-panel h1:hover{
+        text-align: center;
+        color: rgb(255, 0, 0);
+        background: rgba(31, 31, 31, 0.71);
+        font-size: 2em;
+        letter-spacing: .2em;
+        font-family: cursive;
+        border: 2px solid #ffd100;
+    }
+}
+
+
+@media (max-width: 300px){
+    .header-panel h1 {
+        margin-top: 0;
+        text-align: center;
+        color: rgb(255, 0, 0);
+        background: rgba(31, 31, 31, 0.82);
+        font-size: 1em;
+        letter-spacing: .1em;
+        font-family: cursive;
+        border: 2px solid #c4a412;
+    }
+    
+    
+    .mechanics {
+        background: rgba(37, 35, 35, 0.68);
+        width: 97%;
+        float: left;
+        border: 1px solid white;
+        margin-left: 2.5%;
+        margin-top: 2%;
+        height: 250px;
+    }
+}

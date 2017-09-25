@@ -1,0 +1,11 @@
+<?php
+    ob_start();
+    session_start();
+    if(empty($_SESSION["name"])){ 
+        header("Location:login.php");
+    }
+    else{ 
+        session_destroy();
+        header("Location:login.php");
+    }
+?>
